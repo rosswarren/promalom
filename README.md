@@ -23,6 +23,20 @@ P.create(executor);
 P.create((resolve, reject) => { ... });
 ```
 
+### Promisify
+
+Convert a callback return function to return a promise. The callback must be the last parameter.
+
+```js
+const fs = require('fs');
+
+const readFileP = P.promisify(fs.readFile);
+
+readFileP('/etc/passwd').then((err, data) => {
+    ...
+});
+```
+
 ### Series
 
 Run the specified promise returning functions in series. Ensures the previous promise is resolved before starting the current.
