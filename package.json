@@ -6,7 +6,7 @@
   "author": "Ross Warren",
   "license": "ISC",
   "scripts": {
-    "test": "mocha test",
+    "test": "mocha test --harmony_destructuring",
     "lint": "eslint src test"
   },
   "pre-commit": [
