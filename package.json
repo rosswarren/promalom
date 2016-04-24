@@ -1,9 +1,9 @@
 {
   "name": "promalom",
   "version": "0.0.1",
-  "description": "",
+  "description": "A very tiny promise util library",
   "main": "index.js",
-  "author": "",
+  "author": "Ross Warren",
   "license": "ISC",
   "scripts": {
     "test": "mocha test",
