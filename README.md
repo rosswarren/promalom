@@ -1,6 +1,8 @@
 # Promalom
 
-A very tiny promise util library. Don't try to use it yet.
+A very tiny promise util library, designed to work with native Promise functionality. https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+Very small in file size, very specific in functionality.
 
 # Usage
 
