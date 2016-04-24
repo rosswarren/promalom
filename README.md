@@ -52,3 +52,11 @@ Wait the specified time in milliseconds and then resolve. Wraps setTimeout.
 ```js
 P.wait(20);
 ```
+
+## Further examples
+
+### Call a promise returning function with timeout of 1 second
+
+```js
+Promice.race(P.wait(1000), promiseReturningFunction);
+```
