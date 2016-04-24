@@ -11,9 +11,14 @@ Very small in file size, very specific in functionality.
 You can either import the whole library or just specific functions if you prefer explicit dependencies.
 
 ```js
-const P = require('promalom'); // import the whole library
-const { create, wait, series } = require('promalom'); // requiring individual functions
-const series = require('promalom/src/create'); // requiring individual functions from their source files
+// import the whole library
+const P = require('promalom');
+
+// requiring individual functions through destructuring
+const { create, wait, series } = require('promalom'); 
+
+// requiring individual functions from their source files
+const series = require('promalom/src/series'); 
 ```
 
 ## Functions
