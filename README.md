@@ -62,3 +62,14 @@ P.wait(20);
 ```js
 Promice.race(P.wait(1000), promiseReturningFunction);
 ```
+
+### Upload files one at a time
+Assuming `uploadFile` is a function that takes the filename and returns a promise that resolves once uploaded
+
+```js
+const fileNames = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
+
+P.series(fileNames.map(fileName => {
+    return () => uploadFile(fileName); 
+}));
+```
