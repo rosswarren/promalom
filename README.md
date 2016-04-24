@@ -4,6 +4,8 @@ A very tiny promise util library, designed to work with native Promise functiona
 
 Very small in file size, very specific in functionality.
 
+[![npm version](https://img.shields.io/npm/v/promalom.svg?style=flat-square)](https://www.npmjs.com/package/promalom)
+
 # Usage
 
 You can either import the whole library or just specific functions if you prefer explicit dependencies.
