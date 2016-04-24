@@ -1,6 +1,6 @@
 {
   "name": "promalom",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A very tiny promise util library",
   "main": "index.js",
   "author": "Ross Warren",
