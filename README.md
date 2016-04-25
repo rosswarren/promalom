@@ -4,20 +4,28 @@ A very tiny promise util library, designed to work with native Promise functiona
 
 Very small in file size, very specific in functionality.
 
+This library is intended for the Node environment. It can work well in the browser, however makes no attempt to polyfill Promise.
+
 [![npm version](https://img.shields.io/npm/v/promalom.svg?style=flat-square)](https://www.npmjs.com/package/promalom)
 
-# Usage
+# Getting Started
 
-You can either import the whole library or just specific functions if you prefer explicit dependencies.
+Installing the package
+
+```sh
+npm install --save promalom
+```
+
+Importing the library
 
 ```js
 // import the whole library
 const P = require('promalom');
 
-// requiring individual functions through destructuring
+// explicitly requiring individual functions through destructuring
 const { create, wait, series } = require('promalom');
 
-// requiring individual functions from their source files
+// explicitly requiring individual functions from their source files
 const series = require('promalom/src/series');
 ```
 
