@@ -1,4 +1,5 @@
 const assert = require('assert');
+const fs = require('fs');
 
 const promisify = require('../src/promisify');
 
@@ -38,6 +39,14 @@ describe('promisify', () => {
         return promisedFunc(2, 5).catch((error) => {
             assert.equal(typeof error, 'object');
             assert.equal(error.message, 'oh no');
+        });
+    });
+
+    it('works for fs.readFile', () => {
+        const readFileP = promisify(fs.readFile);
+
+        return readFileP('README.md', 'utf8').then(contents => {
+            assert.equal(contents.slice(0, 10), '# Promalom');
         });
     });
 });

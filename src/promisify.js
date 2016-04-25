@@ -6,7 +6,7 @@ module.exports = originalFunction => function() {
             if (arguments.length > 0 && arguments[0]) {
                 reject(arguments[0]);
             } else {
-                resolve(Array.prototype.slice.call(arguments, 1));
+                resolve.apply(null, Array.prototype.slice.call(arguments, 1));
             }
         }
 
