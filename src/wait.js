@@ -1,3 +1,3 @@
 const create = require('./create');
 
-module.exports = timeout => create(resolve => setInterval(resolve, timeout));
+module.exports = timeout => create(resolve => setTimeout(resolve, timeout));
