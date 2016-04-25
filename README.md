@@ -34,7 +34,8 @@ P.create((resolve, reject) => { ... });
 
 ### Promisify
 
-Convert a callback return function to return a promise. The callback must be the last parameter.
+Convert a callback returning function to return a promise. The callback must be the last parameter.
+The callback is expected to follow the Node error first callback pattern, where the first parameter of the callback is `error`.
 
 ```js
 const fs = require('fs');
