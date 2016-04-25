@@ -49,4 +49,16 @@ describe('promisify', () => {
             assert.equal(contents.slice(0, 10), '# Promalom');
         });
     });
+
+    it('works for fs.readFile when it errors', () => {
+        const readFileP = promisify(fs.readFile);
+
+        return readFileP('SOME_MISSING_FILE.md', 'utf8').catch(error => {
+            assert.equal(typeof error, 'object');
+            assert.equal(
+                error.message,
+                'ENOENT: no such file or directory, open \'SOME_MISSING_FILE.md\''
+            );
+        });
+    });
 });
