@@ -41,7 +41,9 @@ const fs = require('fs');
 
 const readFileP = P.promisify(fs.readFile);
 
-readFileP('/etc/passwd').then((err, data) => {
+readFileP('/etc/passwd').then(data => {
+    ...
+}).catch(error => {
     ...
 });
 ```
