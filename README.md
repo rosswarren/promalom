@@ -15,10 +15,10 @@ You can either import the whole library or just specific functions if you prefer
 const P = require('promalom');
 
 // requiring individual functions through destructuring
-const { create, wait, series } = require('promalom'); 
+const { create, wait, series } = require('promalom');
 
 // requiring individual functions from their source files
-const series = require('promalom/src/series'); 
+const series = require('promalom/src/series');
 ```
 
 ## Functions
@@ -67,7 +67,7 @@ P.wait(20);
 ### Call a promise returning function with timeout of 1 second
 
 ```js
-Promice.race(P.wait(1000), promiseReturningFunction);
+Promise.race(P.wait(1000), promiseReturningFunction);
 ```
 
 ### Upload files one at a time
@@ -77,6 +77,6 @@ Assuming `uploadFile` is a function that takes the filename and returns a promis
 const fileNames = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
 
 P.series(fileNames.map(fileName => {
-    return () => uploadFile(fileName); 
+    return () => uploadFile(fileName);
 }));
 ```
