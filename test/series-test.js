@@ -30,4 +30,8 @@ describe('series', () => {
             assert.equal(result, 30);
         });
     });
+
+    it('should handle an empty array', () => series([]).then(result => {
+        assert.equal(result, undefined);
+    }));
 });
