@@ -1,4 +1,4 @@
-# Promalom
+# Promalom TEST
 
 A very tiny promise util library, designed to work with native Promise functionality. https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise
 
