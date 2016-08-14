@@ -5,6 +5,6 @@ build:
     - npm-install
     - npm-test
     
-deploy:
+deploy-npm:
   steps:
     - npm-publish
