@@ -4,3 +4,7 @@ build:
   steps:
     - npm-install
     - npm-test
+    
+deploy:
+  steps:
+    - npm-publish
