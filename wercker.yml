@@ -7,4 +7,4 @@ build:
     
 deploy-npm:
   steps:
-    - kwakayama/npm-publish@0.0.3
+    - turistforeningen/npm-publish@2.0.2
