@@ -5,7 +5,7 @@ module.exports = originalFunction => (...originalFunctionArgs) => create((resolv
     if (callbackArgs.length > 0 && callbackArgs[0]) {
       reject(callbackArgs[0]);
     } else {
-      resolve.apply(null, Array.prototype.slice.call(callbackArgs, 1));
+      resolve(...Array.prototype.slice.call(callbackArgs, 1));
     }
   }
 
