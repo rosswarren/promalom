@@ -10,7 +10,8 @@
   "license": "ISC",
   "scripts": {
     "test": "mocha test",
-    "lint": "eslint src test"
+    "lint": "eslint src test",
+    "format": "npm run lint -- --fix"
   },
   "pre-commit": [
     "lint",
@@ -18,7 +19,7 @@
   ],
   "devDependencies": {
     "eslint": "3.6.0",
-    "eslint-config-airbnb-base": "7.0.1",
+    "eslint-config-airbnb-base": "7.2.0",
     "eslint-plugin-import": "1.14.0",
     "mocha": "3.0.2",
     "pre-commit": "1.1.3",

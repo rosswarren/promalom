@@ -26,12 +26,12 @@ describe('series', () => {
     const second = a => Promise.resolve(a + 6);
     const third = a => Promise.resolve(a + 22);
 
-    return series([first, second, third]).then(result => {
+    return series([first, second, third]).then((result) => {
       assert.equal(result, 30);
     });
   });
 
-  it('should handle an empty array', () => series([]).then(result => {
+  it('should handle an empty array', () => series([]).then((result) => {
     assert.equal(result, undefined);
   }));
 });
