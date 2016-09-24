@@ -45,7 +45,7 @@ describe('promisify', () => {
   it('works for fs.readFile', () => {
     const readFileP = promisify(fs.readFile);
 
-    return readFileP('README.md', 'utf8').then(contents => {
+    return readFileP('README.md', 'utf8').then((contents) => {
       assert.equal(contents.slice(0, 10), '# Promalom');
     });
   });
@@ -53,7 +53,7 @@ describe('promisify', () => {
   it('works for fs.readFile when it errors', () => {
     const readFileP = promisify(fs.readFile);
 
-    return readFileP('SOME_MISSING_FILE.md', 'utf8').catch(error => {
+    return readFileP('SOME_MISSING_FILE.md', 'utf8').catch((error) => {
       assert.equal(typeof error, 'object');
       assert.equal(
                 error.message,

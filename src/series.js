@@ -1,4 +1,4 @@
-module.exports = funcs => {
+module.exports = (funcs) => {
   if (Array.isArray(funcs) && funcs.length > 0) {
     return funcs.splice(1).reduce((acc, curr) => acc.then(curr), funcs[0]());
   }
