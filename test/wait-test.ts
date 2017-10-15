@@ -1,6 +1,6 @@
-const assert = require('assert');
+import { assert } from 'chai';
 
-const wait = require('../src/wait');
+import wait from '../src/wait';
 
 describe('wait', () => {
   it('should wait for the specified time then resolve', () => {
