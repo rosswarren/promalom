@@ -20,7 +20,7 @@
   "devDependencies": {
     "eslint": "4.10.0",
     "eslint-config-airbnb-base": "12.1.0",
-    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-import": "2.17.0",
     "mocha": "4.0.1",
     "pre-commit": "1.2.2",
     "sinon": "4.0.2"
