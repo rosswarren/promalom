@@ -1,7 +1,9 @@
 const assert = require('assert');
 
 const P = require('../index');
-const { create, promisify, series, wait } = require('../index');
+const {
+  create, promisify, series, wait
+} = require('../index');
 
 describe('index', () => {
   it('is available as one giant import', () => {
