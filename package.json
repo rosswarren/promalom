@@ -10,7 +10,7 @@
   "license": "ISC",
   "scripts": {
     "test": "mocha test",
-    "lint": "eslint src test",
+    "lint": "eslint src test index.js",
     "format": "npm run lint -- --fix"
   },
   "pre-commit": [
