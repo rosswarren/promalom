@@ -56,9 +56,9 @@ describe('promisify', () => {
     return readFileP('SOME_MISSING_FILE.md', 'utf8').catch((error) => {
       assert.equal(typeof error, 'object');
       assert.equal(
-                error.message,
-                'ENOENT: no such file or directory, open \'SOME_MISSING_FILE.md\''
-            );
+        error.message,
+        'ENOENT: no such file or directory, open \'SOME_MISSING_FILE.md\''
+      );
     });
   });
 });

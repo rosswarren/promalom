@@ -18,11 +18,11 @@
     "test"
   ],
   "devDependencies": {
-    "eslint": "4.10.0",
-    "eslint-config-airbnb-base": "13.0.0",
-    "eslint-plugin-import": "2.8.0",
-    "mocha": "4.1.0",
+    "eslint": "6.0.1",
+    "eslint-config-airbnb-base": "13.2.0",
+    "eslint-plugin-import": "2.18.0",
+    "mocha": "6.1.4",
     "pre-commit": "1.2.2",
-    "sinon": "4.1.0"
+    "sinon": "7.3.2"
   }
 }
