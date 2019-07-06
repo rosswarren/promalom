@@ -5,6 +5,6 @@
         "import/no-extraneous-dependencies": ["error", {"devDependencies": true, "optionalDependencies": true}]
     },
     "env": {
-        "mocha": true
+        "jest": true
     }
 }

@@ -2,14 +2,14 @@
   "name": "promalom",
   "version": "0.3.0",
   "description": "A very tiny promise util library",
-  "homepage": "https://github.com/josscode/promalom",
-  "bugs": "https://github.com/josscode/promalom/issues",
-  "repository": "https://github.com/josscode/promalom.git",
+  "homepage": "https://github.com/rosswarren/promalom",
+  "bugs": "https://github.com/rosswarren/promalom/issues",
+  "repository": "https://github.com/rosswarren/promalom.git",
   "main": "index.js",
   "author": "Ross Warren",
   "license": "ISC",
   "scripts": {
-    "test": "mocha test",
+    "test": "jest",
     "lint": "eslint src test index.js",
     "format": "npm run lint -- --fix"
   },
@@ -21,8 +21,7 @@
     "eslint": "6.0.1",
     "eslint-config-airbnb-base": "13.2.0",
     "eslint-plugin-import": "2.18.0",
-    "mocha": "6.1.4",
-    "pre-commit": "1.2.2",
-    "sinon": "7.3.2"
+    "jest": "24.8.0",
+    "pre-commit": "1.2.2"
   }
 }
