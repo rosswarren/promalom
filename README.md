@@ -33,32 +33,6 @@ const series = require("promalom/src/series");
 
 ## Functions
 
-### Create
-
-Exactly the same as `new Promise`
-
-```js
-P.create(executor);
-P.create((resolve, reject) => { ... });
-```
-
-### Promisify
-
-Convert a callback returning function to return a promise. The callback must be the last parameter.
-The callback is expected to follow the Node error first callback pattern, where the first parameter of the callback is `error`.
-
-```js
-const fs = require('fs');
-
-const readFileP = P.promisify(fs.readFile);
-
-readFileP('/etc/passwd').then(data => {
-    ...
-}).catch(error => {
-    ...
-});
-```
-
 ### Series
 
 Run the specified promise returning functions in series. Ensures the previous promise is resolved before starting the current.
@@ -101,4 +75,21 @@ Flushes all pending promises in the JavaScript process queue. This is very usefu
 
 ```js
 P.flushPromises();
+```
+
+### Promisify
+
+Convert a callback returning function to return a promise. The callback must be the last parameter.
+The callback is expected to follow the Node error first callback pattern, where the first parameter of the callback is `error`.
+
+```js
+const fs = require('fs');
+
+const readFileP = P.promisify(fs.readFile);
+
+readFileP('/etc/passwd').then(data => {
+    ...
+}).catch(error => {
+    ...
+});
 ```
