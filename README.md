@@ -38,7 +38,11 @@ const series = require("promalom/src/series");
 Run the specified promise returning functions in series. Ensures the previous promise is resolved before starting the current.
 
 ```js
-P.series([myPromiseReturningFunction, anotherPromiseReturningFunction, someOtherPromiseReturningFunction]);
+P.series([
+  myPromiseReturningFunction,
+  anotherPromiseReturningFunction,
+  someOtherPromiseReturningFunction
+]);
 ```
 
 #### Upload files one at a time using series
