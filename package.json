@@ -1,6 +1,6 @@
 {
   "name": "promalom",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A very tiny promise util library",
   "homepage": "https://github.com/rosswarren/promalom",
   "bugs": "https://github.com/rosswarren/promalom/issues",
